@@ -8,7 +8,8 @@ import { ThreeComponent } from '../three/three.component';
 const routes: Routes = [
   { path: 'one', component: OneComponent },
   { path: 'two', component: TwoComponent },
-  { path: 'three', component: ThreeComponent }
+  { path: 'three', component: ThreeComponent },
+  { path: '', component: OneComponent }
 ];
 
 @NgModule({
