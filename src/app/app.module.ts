@@ -16,7 +16,7 @@ import { CustomRoutingModuleModule } from './custom-routing-module/custom-routin
     HelloComponent,
     OneComponent,
     TwoComponent,
-    ThreeComponent
+    ThreeComponent,
   ],
   bootstrap: [AppComponent]
 })
