@@ -7,9 +7,10 @@ import { HelloComponent } from './hello.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
+import { CustomRoutingModuleModule } from './custom-routing-module/custom-routing-module.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, CustomRoutingModuleModule],
   declarations: [
     AppComponent,
     HelloComponent,

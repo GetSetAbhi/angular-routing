@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { OneComponent } from '../one/one.component';
 import { TwoComponent } from '../two/two.component';
 import { ThreeComponent } from '../three/three.component';
@@ -13,6 +13,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), CommonModule],
-  declarations: []
+  declarations: [],
+  exports: [RouterModule]
 })
 export class CustomRoutingModuleModule {}
