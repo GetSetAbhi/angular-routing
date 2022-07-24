@@ -1,10 +1,27 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
 <ul>
   <li><a routerLink="/one" routerLinkActive="active">One Component</a></li>
   <li><a routerLink="/two" routerLinkActive="active">Two Component</a></li>
   <li><a routerLink="/three" routerLinkActive="active">Three Component</a></li>
+</ul>
+<h1>Other set of router links</h1>
+<ul>
+  <li>
+    <a [routerLink]="['/one']" routerLinkActive="active"
+      >One Component has name</a
+    >
+  </li>
+  <li>
+    <a
+      [routerLink]="['/two']"
+      [queryParams]="{ firstName: 'Abhishek', lastName: 'Raina' }"
+      routerLinkActive="active"
+      >Two Component has queryParams</a
+    >
+  </li>
+  <li>
+    <a [routerLink]="['/three']" routerLinkActive="active">Three Component</a>
+  </li>
 </ul>
 <router-outlet></router-outlet>
